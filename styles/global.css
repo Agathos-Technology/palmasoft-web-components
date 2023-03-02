@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #0078A5;
+  --secondary-color: #15B9A9;
+  --info-color: #0078A5;
+  --success-color: #12AD93;
+  --warning-color: #FFC200;
+  --error-color: #FC6D6D;
+  --primary-font: 'Lato', sans-serif;
+  /* --secondary-font: 'Lato', sans-serif; */
+}
+
+@font-face {
+  font-family: var(--primary-font);
+  src: url('../stories/assets/fonts/lato-black-webfont.woff2') format('woff2'),
+    url('../stories/assets/fonts/lato-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--primary-font);
+  src: url('../stories/assets/fonts/lato-bold-webfont.woff2') format('woff2'),
+    url('../stories/assets/fonts/lato-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--primary-font);
+  src: url('../stories/assets/fonts/lato-italic-webfont.woff2') format('woff2'),
+    url('../stories/assets/fonts/lato-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--primary-font);
+  src: url('../stories/assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+    url('../stories/assets/fonts/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+button {
+  font-family: var(--primary-font) !important;
+  color: red !important;
+}
