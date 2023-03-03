@@ -1,0 +1,121 @@
+.form-group {
+  position: relative;
+  max-width: 27rem;
+  width: auto;
+}
+
+.form-group.has-icon i {
+  position: absolute;
+  top: 50%;
+  color: var(--active-color);
+  transform: scale(0) translateY(-50%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.form-group > .form-input {
+  background: none;
+  display: block;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: gray;
+  color: var(--active-color);
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 100;
+  padding: 1rem 0 0.3rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+}
+
+.form-group.has-icon > .form-input {
+  padding-left: 1.5rem;
+}
+
+.form-group>label {
+  font-family: var(--primary-font);
+  font-size: 1.1rem;
+  position: absolute;
+  top: calc(50% - 0.2rem);
+  color: gray;
+  transition: 0.2s ease all;
+  user-select: none;
+}
+
+.form-group > div {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  z-index: 200;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.form-group>.form-input:focus+label,
+.form-group>.form-input.has-value+label {
+  top: 0rem;
+  font-size: 14px;
+  color: gray;
+}
+
+.form-group>.form-input:focus~div,
+.form-group>.form-input.has-value~div {
+  transform: scaleX(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.form-group>.form-input:focus~i,
+.form-group>.form-input.has-value~i {
+  transform: scale(1) translateY(-10%);
+}
+
+.form-group .form-input.has-value {
+  border-color: var(--primary-color);
+}
+
+.form-group .form-input:-webkit-autofill,
+.form-group .form-input:-webkit-autofill:hover,
+.form-group .form-input:-webkit-autofill:focus,
+.form-group .form-input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-group>.form-error {
+  position: absolute;
+  bottom: -20px;
+  color: red;
+  left: 5px;
+  transform: scale(0.8);
+  display: none;
+}
+
+.form-group>.form-input.has-error,
+.form-group>.form-input.has-error~label,
+.form-group>.form-input.has-error~i {
+  border-color: red;
+  color: red;
+}
+
+.form-group>.form-input.has-error~div {
+  background-color: red;
+}
+
+.form-group>.form-input.has-error~.form-error {
+  display: block;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

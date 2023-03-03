@@ -8,4 +8,7 @@ export default {
 const Template = (args) => createCheckbox(args);
 
 export const Checkbox = Template.bind({});
-Checkbox.args = {};
+Checkbox.args = {
+  name: 'example',
+  label: 'Example',
+};

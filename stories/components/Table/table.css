@@ -1,0 +1,40 @@
+body {
+  background-color: #F6F9FC;
+}
+
+.table-wrapper {
+  overflow-y: auto;
+}
+
+table {
+  overflow-y: auto;
+  /* box-sizing: border-box; */
+}
+
+table thead th {
+  padding-bottom: 20px;
+  color: var(--primary-color);
+  font-weight: 500;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table thead th,
+table tbody td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  text-align: center;
+}
+
+table tbody td {
+  padding-bottom: 5px;
+}
+
+table tbody tr td span {
+  background-color: #fff;
+  display: block;
+  padding: 15px;
+}

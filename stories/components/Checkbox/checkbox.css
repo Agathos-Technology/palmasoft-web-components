@@ -1,0 +1,33 @@
+.checkbox input[type="checkbox"] {
+  appearance: none;
+  margin: 0;
+  margin-right: 8px;
+}
+
+.checkbox input[type="checkbox"]:before {
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 2px solid #000;
+  text-align: center;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"].checked::before {
+  background-color: var(--primary-color);
+}
+
+.checkbox label {
+  user-select: none;
+  cursor: pointer;
+}

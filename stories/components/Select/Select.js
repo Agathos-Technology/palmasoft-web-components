@@ -4,8 +4,13 @@ export const createSelect = () => {
   const article = document.createElement('article');
 
   const section = `
-    <div>
-      <h1>Select</h1>
+    <div class="select-wrapper">
+      <select>
+          <option selected> Select Box </option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Last long option</option>
+      </select>
     </div>
   `;
 

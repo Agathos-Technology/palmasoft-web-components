@@ -5,7 +5,16 @@ export const createRadio = () => {
 
   const section = `
     <div>
-      <h1>Radio</h1>
+      <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
+      <label for="radio-1" class="radio-custom-label">First Choice</label>
+    </div>
+    <div>
+      <input id="radio-2" class="radio-custom"name="radio-group" type="radio">
+      <label for="radio-2" class="radio-custom-label">Second Choice</label>
+    </div>
+    <div>
+      <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+      <label for="radio-3" class="radio-custom-label">Third Choice</label>
     </div>
   `;
 

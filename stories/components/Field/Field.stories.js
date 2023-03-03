@@ -19,10 +19,22 @@ export default {
 const Template = (args) => createField(args);
 
 export const Text = Template.bind({});
-Text.args = {};
+Text.args = {
+  type: 'text',
+  label: 'Text',
+};
 
 export const Number = Template.bind({});
-Number.args = {};
+Number.args = {
+  type: 'number',
+  label: 'Number',
+  icon: '<i class="fa-solid fa-hashtag"></i>'
+};
 
 export const Email = Template.bind({});
-Email.args = {};
+Email.args = {
+  type: 'email',
+  label: 'Email',
+  icon: '<i class="fa-regular fa-envelope"></i>',
+  required: true,
+};

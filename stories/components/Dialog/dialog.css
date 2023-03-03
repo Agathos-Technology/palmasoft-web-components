@@ -1,0 +1,37 @@
+.alert-custom {
+  z-index: 5;
+  max-width: 70vw;
+  min-width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  pointer-events: all;
+  animation-name: render-box;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+}
+
+.alert-custom__form .form-group {
+  margin-bottom: 30px;
+}
+
+.alert-custom__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.alert-custom__footer .btn {
+  margin-top: 10px;
+}
+
+@keyframes render-box {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

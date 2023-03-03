@@ -24,7 +24,6 @@ const Template = ({ label, ...args }) => {
 };
 
 export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/html/writing-stories/args
 Primary.args = {
   primary: true,
   label: 'Button',
@@ -35,14 +34,13 @@ Secondary.args = {
   label: 'Button',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
+export const WithIcon = Template.bind({});
+WithIcon.args = {
+  primary: true,
+  label: 'Button <i class="fa-solid fa-arrow-up-right-from-square"></i>',
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
+export const Disabled = Template.bind({});
+Disabled.args = {
   label: 'Button',
 };
