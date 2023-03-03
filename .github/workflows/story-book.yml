@@ -1,10 +1,10 @@
+name: Publish stories if changed
+
 on:
   push:
     branches:
       - master
     paths: ['stories/**']
-
-name: Publish stories if changed
 
 jobs:
   build-and-deploy:

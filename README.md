@@ -1,3 +1,5 @@
+[![Publish stories if changed](https://github.com/Agathos-Technology/palmasoft-web-components/actions/workflows/node.js.yml/badge.svg)](https://github.com/Agathos-Technology/palmasoft-web-components/actions/workflows/node.js.yml)
+
 # palmasoft-web-components
 
 ## Requirements
@@ -15,4 +17,3 @@
 - Run the storybook project with:
 
   ```npm storybook```
-
