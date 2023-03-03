@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "build-storybook"
   },
   "keywords": [],
@@ -22,6 +24,7 @@
     "@storybook/manager-webpack4": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
+    "gh-pages": "^5.0.0",
     "storybook-addon-sass-postcss": "^0.1.3"
   }
 }
